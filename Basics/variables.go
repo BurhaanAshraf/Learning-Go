@@ -4,7 +4,7 @@ import "fmt"
 
 var globalScope = "This is global scope variable" // we have declared a package level variables and we cannot create it using goofer
 
-func main() {
+func variables() {
 	var age int
 
 	age = 10
