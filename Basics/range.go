@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Range() {
 
 	// ============================================================
 	// 🔹 1. range over String
