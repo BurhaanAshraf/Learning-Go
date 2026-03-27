@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func Panic() {
 
 	// ============================================================
 	// 🔹 1. Panic Basics
