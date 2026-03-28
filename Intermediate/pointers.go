@@ -13,11 +13,11 @@ func main() {
 
 	fmt.Println(*ptr)
 
-	if ptr == nil {
-		fmt.Println("Pointer is NIL")
-	} else {
-		fmt.Println("Pointer contains value:", *ptr)
-	}
+	// if ptr == nil {
+	// 	fmt.Println("Pointer is NIL")
+	// } else {
+	// 	fmt.Println("Pointer contains value:", *ptr)
+	// }
 
 	modifyValue(ptr)
 
