@@ -65,7 +65,7 @@ func (e employee) introduce() {
 // 🔹 4. Main Function
 // ============================================================
 
-func main() {
+func embedding() {
 
 	employee01 := employee{
 		person: person{
