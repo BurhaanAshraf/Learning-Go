@@ -5,7 +5,7 @@ import (
 	"unicode/utf8"
 )
 
-func strings() {
+func Strings() {
 
 	message := "Hello Go"
 	_ = message
