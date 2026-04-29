@@ -2,25 +2,81 @@ package main
 
 import "fmt"
 
+func StringFormatting() {
 
-func main() {
+	// ============================================================
+	// 🔹 Number Formatting
+	// ============================================================
 
 	num := 42
-	fmt.Printf("%05d\n" , num) // this five will only be active when we have less than 5 digits
+
+	// %05d
+	// d → integer
+	// 5 → minimum width
+	// 0 → fill remaining space with leading zeros
+
+	// Output: 00042
+
+	fmt.Printf("%05d\n", num)
+
+
+	// ============================================================
+	// 🔹 String Width Formatting
+	// ============================================================
 
 	message := "Hello"
-	fmt.Printf("|%10s|\n" , message) // here we are fixing the width to minimum 10 , if  < 10 then we will have leading spaces
-	fmt.Printf("|%-10s|\n" , message ) // here we are fixing the width to minimum 10 , if < 10 then we will have trailing spaces
 
-	// if we use backtick then it would be a RAW string which means it takes everything into string literal!
+	// %10s
+	// s → string
+	// 10 → minimum width
 
-	message2 := "Hello \nWorld" // this will use escape sequence as new line
-	message3 := `Hello \nWorld` // this will use escape sequence as string literal
+	// If string length < 10
+	// leading spaces are added
+
+	fmt.Printf("|%10s|\n", message)
+
+
+	// %-10s
+	// - means left aligned
+
+	// If string length < 10
+	// trailing spaces are added
+
+	fmt.Printf("|%-10s|\n", message)
+
+
+	// ============================================================
+	// 🔹 Normal String vs Raw String
+	// ============================================================
+
+	// Normal string uses escape sequences
+
+	message2 := "Hello \nWorld"
+
+	// Raw string uses backticks `
+	// Escape sequences are treated as plain text
+
+	message3 := `Hello \nWorld`
 
 	fmt.Println(message2)
 	fmt.Println(message3)
-
-
-
-
 }
+
+
+// ============================================================
+// 🔹 Quick Revision
+// ============================================================
+
+// %d → integer
+
+// %s → string
+
+// %05d → pad with leading zeros
+
+// %10s → right aligned string
+
+// %-10s → left aligned string
+
+// "" → normal string (escape sequences work)
+
+// `` → raw string (literal text)
