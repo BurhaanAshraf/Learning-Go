@@ -8,7 +8,7 @@ import (
 )
 
 
-func main() {
+func BufIo() {
 
 	reader := bufio.NewReader(strings.NewReader("Hello, BufIo PackageEE!\n")) 
 	
