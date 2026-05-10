@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func lineFilters() {
 
 	// ============================================================
 	// 🔹 Opening File
