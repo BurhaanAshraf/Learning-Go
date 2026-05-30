@@ -1,0 +1,7 @@
+DEBUG: 2026/05/30 08:55:34 logging.go:35: Cannot Debug this program
+DEBUG: 2026/05/30 08:56:10 logging.go:35: Cannot Debug
+DEBUG: 2026/05/30 09:50:47 logging.go:35: Debugged
+DEBUG: 2026/05/30 09:53:27 logging.go:40: This is an debug message 
+WARN: 2026/05/30 09:53:27 This is a warning message
+INFO: 2026/05/30 09:53:27 logging.go:42: THis is an info message
+ERROR: 2026/05/30 09:53:27 logging.go:43: This is an error message
